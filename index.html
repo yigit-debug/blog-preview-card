@@ -8,6 +8,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,6 +23,16 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+
+    .attribution a:hover{
+      color: white;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -37,10 +51,14 @@
     .container {
       background-color: hsl(0, 0%, 100%);
       padding: 20px;
-      width: 18%;
+      width: 20%;
       border-radius: 20px;
-      border: 2px solid black;
-      box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+      border: 1px solid black;
+      box-shadow: 8px 8px rgba(0, 0, 0, 1);
+      line-height: 1;
+    }
+    .container:hover{
+      box-shadow: 12px 12px rgba(0, 0, 0, 1);
     }
 
     p {
@@ -72,8 +90,10 @@
     .learning {
       display: inline;
       background-color: hsl(47, 88%, 63%);
-      padding: 8px 12px 8px 12px;
+      padding: 6px 12px 6px 12px;
       border-radius: 5px;
+      font-size: small;
+      font-weight: 600;
     }
 
     .content {
@@ -81,9 +101,10 @@
     }
 
     .date {
-      margin-top: 30px;
-      font-weight: 600;
+      margin-top: 20px;
+      font-weight: 800;
       color: hsl(0, 0%, 42%);
+      font-size: small;
     }
 
     .these {
@@ -98,17 +119,18 @@
     }
 
     .gregimg {
-      width: 35px;
+      width: 32px;
     }
 
     .greg {
-      font-weight: 600;
+      font-weight: 800;
       margin-left: 10px;
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
 
     <div class="image">
@@ -116,12 +138,12 @@
     </div>
     <div class="content">
       <p class="learning"><b>Learning</b></p>
-      <p class="date">Published 21 Dec 2023</p>
+      <p class="date">Published 21 Dec 2023</p><br>
       <a href="https://frontendmentor.io/">
         <h2>HTML & CSS foundations</h2>
-      </a>
+      </a><br>
       <p class="these">These languages are the backbone of every website, defining structure, content, and presentation.
-      </p>
+      </p><br>
       <div class="gregcontainer">
         <img class="gregimg" src="./assets/images/image-avatar.webp" alt="">
         <p class="greg">Greg Hooper</p>
@@ -129,6 +151,7 @@
     </div>
 
   </div>
+  
 
   <!-- Learning -->
 
@@ -142,7 +165,7 @@
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Baha Yiğit Öztürk</a>.
   </div> -->
 </body>
 
